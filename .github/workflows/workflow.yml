@@ -16,7 +16,10 @@ jobs:
         run: npx create-react-app  ci-github/
 
       - name: node modules
-        run: npm install
+        run: cd ci-github && npm install
 
       - name: Build da aplicação
         run: npm run build
+
+      - name: Testes
+        run: npm test
