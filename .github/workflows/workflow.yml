@@ -12,11 +12,8 @@ jobs:
       - name: Frontend React
         uses: actions/checkout@v3
 
-      - name: Create React App
-        run: npx create-react-app  ci-github/
-
       - name: node modules
-        run: cd ci-github && npm install
+        run: npm install
 
       - name: Build da aplicação
         run: npm run build
