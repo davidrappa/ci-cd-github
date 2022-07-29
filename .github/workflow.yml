@@ -1,0 +1,16 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # @link https://github.com/actions/checkout
+      - name: Frontend React
+        uses: actions/checkout@v3
+
+      - name: Build da aplicação
+        run: npm run build
