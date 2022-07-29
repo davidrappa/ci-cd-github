@@ -12,6 +12,9 @@ jobs:
       - name: Frontend React
         uses: actions/checkout@v3
 
+      - name: Create React App
+        run: npx create-react-app .
+
       - name: node modules
         run: npm install
 
